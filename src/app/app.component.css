@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+.game--container {
+  padding: 1rem;
+  height: 100vh;
+  background: var(--background);
+  font-family: "Moderustic", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.game--header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  margin-bottom: 3rem;
+}
+
+.game--header .game--title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-right: 0.5rem;
+}
+.game--header .title {
+  display: flex;
+  align-items: end;
+}
+.game--header .title .game--author {
+  transform: translateY(-5px);
+}
+
+.game-zone {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.new-round--btn {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: rgb(200, 200, 200);
+  cursor: pointer;
+}
+
+.new-round--btn:enabled {
+  color: rgb(86, 86, 86);
+}
+
+
+.new-round--btn:enabled:hover {
+  color: black;
+}
+
+.character {
+  display: flex;
+  flex-direction: row !important;
+  padding: 1rem;
+  font-size: 1rem;
+  background: skyblue;
+  font-weight: 400;
+  border: 1px solid rgb(66, 111, 129);
+  border-radius: 0.3rem;
+  outline: none;
+  cursor: pointer;
+  height: min-content;
+}
+
+.game-character--container {
+  display: flex;
+}
+
+.game--character {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  background: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.75rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  width: 60px;
+  justify-content: center;
+}
+
+.loading {
+  animation: rotating 1s infinite linear;
+}
+
+.total {
+  font-weight: 800;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: start;
+  padding: 0 .25rem;
+  padding: 1rem 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(365deg);
+  }
+}

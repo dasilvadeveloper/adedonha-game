@@ -1,0 +1,134 @@
+.round {
+  display: flex;
+}
+
+span > input,
+span.column-name {
+  padding: 1rem;
+  font-size: 1.15rem;
+  background: transparent;
+  border: none;
+  border-right: 1.5px solid rgb(132, 132, 132);
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.06);
+  width: 100% !important ;
+  font-family: 'Moderustic';
+  font-weight: 500;
+}
+
+.column-total {
+  padding: 1rem;
+  font-size: 1.15rem;
+  background: transparent;
+  border: none;
+  border-right: 1.5px solid rgb(132, 132, 132);
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.06);
+  width: 75px !important;
+  max-height: 55px;
+  font-family: 'Moderustic' !important;
+}
+
+.column-total:nth-of-type(2n +1) {
+  font-weight: 600;
+}
+
+.column-index {
+  font-size: 0.75rem;
+  color: grey;
+}
+
+.validate {
+  padding: 1rem !important;
+  width: 200px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.validate button {
+  padding: 0.75rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: rgba(26, 207, 26, 0.415);
+  border-radius: 99rem;
+  color: white;
+  border: none;
+  outline: none;
+  transition: background 0.2s ease-out;
+}
+
+.validate button:hover {
+  background: rgb(26, 207, 26);
+}
+
+.validate button:active {
+  background: rgb(11, 154, 11);
+}
+
+.result {
+  width: 100%;
+  display: flex;
+}
+
+.result button {
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+  background: var(--background);
+  display: flex;
+  border: none;
+  outline: none;
+  border-right: 1px solid rgb(132, 132, 132);
+  border-bottom: 1.5px solid rgb(132, 132, 132);
+  border-radius: 0 0 0 1rem;
+  justify-content: center;
+  align-items: center;
+  transition: font-size .2s;
+}
+
+.result button:hover {
+  filter: brightness(.95);
+}
+.result button.valid:hover {
+  color:rgb(0, 255, 60);
+  filter: brightness(.95);
+}
+.result button.invalid:hover {
+  color:rgb(255, 0, 0);
+  filter: brightness(.95);
+}
+
+
+.result button.valid {
+  border-right: 1px solid rgb(132, 132, 132);
+  border-bottom: 1.5px solid rgb(132, 132, 132);
+  border-radius: 0 0 0 1rem;
+}
+
+.result button.invalid {
+  border-right: 1.5px solid rgb(132, 132, 132);
+  border-bottom: 1.5px solid rgb(132, 132, 132);
+  border-radius: 0 0 1rem 0;
+}
+ 
+.result button.equal {
+  border-radius: 0 0 0 0 !important;
+}
+
+
+.result button:hover {
+  font-size: 1.1rem;
+}
+
+input.valid{
+  color: rgb(53, 158, 53);
+}
+
+input.equal{
+  color: rgb(198, 195, 100);
+}
+
+input.invalid{
+  color: rgb(158, 53, 53);
+}

@@ -1,0 +1,18 @@
+<div class="round" *ngIf="columnNamesOnly">
+  <span class="column-name" *ngFor="let round of columns; index as i">
+    <span class="column-index">{{ i }}. </span>{{ round.topic }}
+  </span>
+  <span class="column-total"> Total </span>
+</div>
+<div class="round" *ngIf="!columnNamesOnly">
+  <span *ngFor="let roundField of round.values; index as i">
+    <input (input)="validateFirstChar($event)" [disabled]="roundField.isValid != null" [ngClass]="roundField.isValid" type="text" [(ngModel)]="roundField.value" />
+ 
+    <div class="result" *ngIf="round.id == index && roundField.isValid == null">
+      <button [tabIndex]="-1" (click)="validateField(roundField, 'valid')" class="valid"><i class="fa-solid fa-check"></i></button>
+      <button [tabIndex]="-1" (click)="validateField(roundField, 'equal')" class="equal"><i class="fa-solid fa-equals"></i></button>
+      <button [tabIndex]="-1" (click)="validateField(roundField, 'invalid')" class="invalid"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+  </span>
+  <input class="column-total" [(ngModel)]="total" />
+</div>

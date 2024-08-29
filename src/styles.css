@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f2f4;
+}
+
+html{
+  --background: #f1f2f4
+}
+
+a {
+  color: black;
+  font-weight: 400;
+}
+a:hover {
+  font-weight: 600;
+}
+
+a:visited {
+  color: black;
+}

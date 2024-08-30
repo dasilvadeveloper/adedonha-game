@@ -19,7 +19,7 @@ export class AppComponent {
     { topic: 'Vehicle', isValid: null as any, value: '' },
     { topic: 'Sport', isValid: null as any, value: '' },
     { topic: 'Fruit', isValid: null as any, value: '' },
-    { topic: 'County', isValid: null as any, value: '' },
+    { topic: 'Country', isValid: null as any, value: '' },
   ];
   rounds: Round[] = [];
   character: string = '?';

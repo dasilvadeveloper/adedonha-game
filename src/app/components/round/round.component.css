@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.round span{
+  width: 100%;
+}
+
 span > input,
 span.column-name {
   padding: 1rem;
